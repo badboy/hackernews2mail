@@ -1,0 +1,14 @@
+Date: {{date}}
+From: {{#from}}{{name}} <{{mail}}>{{/from}}
+To: {{#to}} {{name}} <{{mail}}>{{/to}}
+Subject: {{subject}}
+Message-ID: <{{message_id}}@hackernews>
+References: <{{post_id}}@hackernews>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit{{#reply}}
+In-Reply-To: <{{reply_to}}@hackernews>{{/reply}}
+User-Agent: {{user_agent_string}}
+
+{{body}}
